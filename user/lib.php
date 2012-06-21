@@ -370,7 +370,7 @@ function user_get_user_details($user, $course = null, array $userfields = array(
 
     //Departement/Institution/Idnumber are not displayed on any profile, however you can get them from editing profile.
     if ($isadmin or $currentuser) {
-    if (in_array('idnumber', $userfields) && $user->idnumber) {
+        if (in_array('idnumber', $userfields) && $user->idnumber) {
             $userdetails['idnumber'] = $user->idnumber;
         }
         if (in_array('institution', $userfields) && $user->institution) {
